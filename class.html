@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css"> -->
+</head>
+<body>
+
+    <h1>BUSCADOR DE CLASES</h1>
+
+    <div id="contenedor">
+
+
+        <form id="buscador">
+            <div class="row">
+            <div class="three colums">
+                <label for="clase">Clase</label>
+                <select id="clase" class="u-full-widht">
+                    <option value="">Seleccionar</option>
+                    <option value="Mago">Mago</option>
+                    <option value="Warrior">Warrior</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Bardo">Bardo</option>
+                    <option value="Arquero">Arquero</option>
+                </select>
+            </div>
+            <div class="three colums">
+                <label for="arma">Arma</label>
+                <select id="arma" class="u-full-widht">
+                    <option value="">Seleccionar</option>
+                    <option value="magia">Magia</option>
+                    <option value="maza">Maza</option>
+                    <option value="espada">Espada</option>
+                    <option value="musica">Musica</option>
+                    <option value="arco">Arco</option>
+                </select>
+            </div>
+            </div>
+        </form>
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="js/info.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
