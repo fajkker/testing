@@ -8,7 +8,7 @@ function lanzardados() {
     $({ deg: 0 }).animate({ deg: 360 }, {
         duration: 700,
         step: function (now) {
-            var scale = (1 * now / 360);
+            var scale = (0.7 * now / 360);
             $('#ImgNum1').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
@@ -29,7 +29,7 @@ function lanzardados() {
     document.getElementById("ImgNum2").src = "img/dungeon/" + numero2 + ".svg";
     document.getElementById("ImgNum3").src = "img/dungeon/" + numero3 + ".svg";
     document.getElementById("ImgNum4").src = "img/dungeon/" + numero4 + ".svg";
-    document.getElementById("SumaDados").innerHTML = suma;
+    document.getElementById("SumaNumeros").innerHTML = suma;
     
     $('#int').click(function () {
         let int = suma;

@@ -2,53 +2,83 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JS Project</title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="js/info.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/30ab25367b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" class="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Seleccion de personaje</title>
+
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="container mx-auto">
+        <div id="contenido" class="pb-10">
+            <header class="bg-teal-500 text-white py-3 font-bold uppercase">
+                <h1 class="text-center">Seleccion de Personaje</h1>
+            </header>
+            <form class="mt-10 max-w-lg mx-auto" action="#" id="reselect">
+                <div class="flex items-center mb-5">
+                    <label class="font-bold  uppercase mr-2 w-20" for="clase">Clase:</label>
+                    <select class="flex-1 bg-gray-100 p-3 appearance-none" id="clase">
+                        <option value="">- Seleccionar -</option>
+                        <option value="1">Mago</option>
+                        <option value="2">Warrior</option>
+                        <option value="3">Paladin</option>
+                    </select>
+                </div>
+                <div class="flex items-center mb-5">
+                    <label class="font-bold  uppercase mr-2 w-20" for="nivel">Nivel:</label>
+                    <select class="flex-1 bg-gray-100 p-3 appearance-none" id="nivel"></select>
+                </div>
+                <!-- <div class="flex items-center mb-5">
+                    <label class="font-bold  uppercase mr-2 w-20" for="status">Status:</label>
+                    <select class="flex-1 bg-gray-100 p-3 appearance-none" id="status"></select>
+                </div> -->
+                <fieldset>
+                    <legend class="font-bold  uppercase text-2xl text-center w-full">Eleccion de Armas</legend>
 
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <a class="nav-item bg-light justify-content-center">Project JS</a>
-            <button class="btn btn-outline-success" type="submit">Log in</button>
-        </div>
-    </nav>
-
-    <div class="container container-main">
-        <div class="row text-center justify-content-center">
-            <div class="col col-sm-3">
-                <div class="card bg-light mb-3">
-                    <div class="card-header">
-                        <b>
-                            Click en el dragon para empezar
-                        </b>
+                    <div class="flex justify-around mt-5">
+                        <div>
+                            <label class="font-bold  uppercase mr-2">Wand</label>
+                            <input type="radio" name="tipo" value="Wand" checked>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="font-bold  uppercase mr-2">Espada</label>
+                            <input type="radio" name="tipo" value="Espada">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="font-bold  uppercase mr-2">Maza</label>
+                            <input type="radio" name="tipo" value="Maza">
+                            </label>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <a href="dungeon.html">
-                            <i class="fa-brands fa-d-and-d"></i>
-                        </a>
+                </fieldset>
+
+                <div id="cargando" class="hidden">
+                    <div class="spinner">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
                     </div>
                 </div>
-            </div>
+                <div id="resultado"></div>
+                <div class="flex  justify-center py-4">
+                    <button type="submit"
+                        class="mx-auto bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-20 rounded">Finalizar eleccion de personaje
+                    </button>
+                </div>
+
+            </form>
         </div>
+        <!--#contenido-->
     </div>
 
-    <footer class="page-footer bg-light">
-        <div class="footer-copyright font-small text-center py-3">
-            <a href=""> © Federico Paradelo™ - 2022</a>
-        </div>
-    </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,7 @@
-const information = [
+const clases = [
     {
         clase: 'Mago',
-        arma: 'Magia',
-        src: "https://fontawesome.com/icons/wand-magic?s=solid&f=classic",
+        arma: 'magia',
         intelecto: 20,
         fuerza: 10,
         constitucion: 15,
@@ -10,7 +9,7 @@ const information = [
     },
     {
         clase: 'Warrior',
-        arma: 'Maza',
+        arma: 'maza',
         intelecto: 25,
         fuerza: 15,
         constitucion: 10,
@@ -18,7 +17,7 @@ const information = [
     },
     {
         clase: 'Paladin',
-        arma: 'Espada',
+        arma: 'espada',
         intelecto: 10,
         fuerza: 20,
         constitucion: 30,
@@ -26,7 +25,7 @@ const information = [
     },
     {
         clase: 'Bardo',
-        arma: 'Musica',
+        arma: 'musica',
         intelecto: 10,
         fuerza: 20,
         constitucion: 30,
@@ -34,7 +33,7 @@ const information = [
     },
     {
         clase: 'Arquero',
-        arma: 'Arco',
+        arma: 'arco',
         intelecto: 10,
         fuerza: 20,
         constitucion: 30,
